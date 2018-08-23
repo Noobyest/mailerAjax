@@ -29,11 +29,15 @@ Rails : 5.2.1
 En local: 
 
 bundle install
+
 rails db:create
+
 rails s 
 
 
 Team: 
 
 Mathieu Charret
+
+
 Farida Soualmia
