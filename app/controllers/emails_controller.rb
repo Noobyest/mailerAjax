@@ -23,6 +23,7 @@ class EmailsController < ApplicationController
 
   # GET /emails/1/edit
   def edit
+    @emal = Email.new
   end
 
   # POST /emails
@@ -55,14 +56,14 @@ class EmailsController < ApplicationController
     end
   end
 
+  def all_email
+    @emails = Email.all
+  end 
+
   # DELETE /emails/1
   # DELETE /emails/1.json
   def destroy
-    @email.destroy
-    respond_to do |format|
-      format.html { redirect_to emails_url, notice: 'Email was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    @email.destroy(params[:id])
   end
 
   private
