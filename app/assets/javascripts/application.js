@@ -16,3 +16,10 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree 
+
+$(document).ready(() => {
+    $(".show").on('click', event => {
+      $(event.currentTarget).parent().removeClass("unread");
+    $('.show-email').fadeIn();
+    });
+})
