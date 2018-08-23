@@ -28,6 +28,7 @@ class EmailsController < ApplicationController
 
   # POST /emails
   # POST /emails.json
+  #cours THP
   def create
     @email = Email.new(email_params)
 
